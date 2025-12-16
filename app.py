@@ -3,7 +3,7 @@ import streamlit as st  # frontend UI design
 import numpy as np
 import joblib
 
-
+model = joblib.load('house_price_prediction_model.pkl')
 st.title('House Price Prediction')   # main title
 st.write('Enter inputs to predict estimated price for your house !')  # subtitle
 
